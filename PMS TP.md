@@ -110,6 +110,9 @@ On approche les points par une droite de pente $a$.
 
 L'estimateur graphique $\theta_g$ vaut alors $\theta_g = \frac{1}{a}$
 
+## Question 7 et 8 : Simulation sur R
+
+
 ```{r}
 n <- 20
 theta <- 1000
@@ -143,6 +146,6 @@ EMSBVM <- (M^(n+1) - (M - 1)^(n + 1))/(M^n - (M - 1)^n)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzMxMzkzNyw5MjE0MzE0NjZdfQ==
+eyJoaXN0b3J5IjpbLTQyNTg4Mjk5MCwxMDA3MzEzOTM3LDkyMT
+QzMTQ2Nl19
 -->
-
