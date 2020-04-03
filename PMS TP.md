@@ -110,19 +110,31 @@ On approche les points par une droite de pente $a$.
 
 L'estimateur graphique $\theta_g$ vaut alors $\theta_g = \frac{1}{a}$
 
+## Question 7 et 8 : Simulation sur R
+
+
 ```{r}
 n <- 20
 theta <- 1000
 # Création des données
 data <- sample(1:theta, n, replace=T)
+```
+
+Tracé d'un histogramme ainsi que du graphe de probabilité pour la loi uniforme discrète:
+
+```{r}
 # Tracé de l'histogramme
 par(mfcol=c(1,2))
 hist(data)
 # tracé du graphe de proabilité pour la loi uniforme discrète:
 ##On ordonne les données
 dataord <- sort(data)
+# On trace:
 plot(dataord, seq(1:n)/n)
+```
 
+
+```{r}
 #Calcul des estimateurs:
 ##Estimateur des moments
 EMM <- 2 * mean(data) - 1
@@ -143,6 +155,6 @@ EMSBVM <- (M^(n+1) - (M - 1)^(n + 1))/(M^n - (M - 1)^n)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzMxMzkzNyw5MjE0MzE0NjZdfQ==
+eyJoaXN0b3J5IjpbLTEwMTE3ODU5MzksMTAwNzMxMzkzNyw5Mj
+E0MzE0NjZdfQ==
 -->
-
