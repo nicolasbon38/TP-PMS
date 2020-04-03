@@ -138,7 +138,8 @@ plot(dataord, seq(1:n)/n)
 
 
 ```{r}
-m <- 50
+m <- 100
+n <- 100
 EMM <- c()
 EMME <- c()
 EMMV <- c()
@@ -160,6 +161,17 @@ for (i in 1:m){
   M = max(data)
   EMSBVM[i] <- (M^(n+1) - (M - 1)^(n + 1))/(M^n - (M - 1)^n)
   }
+  
+Biais_EMM <- mean(EMM) - theta
+EQM_EMM <- var(EMM) + Biais_EMM^2
+Biais_EMME <- mean(EMME) - theta
+EQM_EMME <- var(EMME) + Biais_EMME^2
+Biais_EMMV <- mean(EMMV) - theta
+EQM_EMMV <- var(EMMV) + Biais_EMMV^2
+Biais_EMG <- mean(EMG) - theta
+EQM_EMG <- var(EMG) + Biais_EMG^2
+Biais_EMSBVM <- mean(EMSBVM) - theta
+EQM_EMSBVM <- mean(EMSBVM) + Biais_EMSBVM^2
 ```
 
 
