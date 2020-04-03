@@ -133,7 +133,7 @@ dataord <- sort(data)
 plot(dataord, seq(1:n)/n)
 ```
 
-![](https://github.com/nicolasbon38/TP-PMS/blob/master/histo%20et%20graphe%20de%20proba.png)
+![](https://raw.githubusercontent.com/nicolasbon38/TP-PMS/master/histo%20et%20graphe%20de%20proba.png)
 
 
 ```{r}
@@ -157,6 +157,6 @@ EMSBVM <- (M^(n+1) - (M - 1)^(n + 1))/(M^n - (M - 1)^n)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTMwMjAyNTksLTEwMTE3ODU5MzksMT
-AwNzMxMzkzNyw5MjE0MzE0NjZdfQ==
+eyJoaXN0b3J5IjpbLTI3MzYxMDUxMywtMTAxMTc4NTkzOSwxMD
+A3MzEzOTM3LDkyMTQzMTQ2Nl19
 -->
